@@ -54,7 +54,7 @@ class StockApp extends React.Component {
         "indexProductSelected": null
     };
 
-    onFilterValueChange(event){
+    onFilterValueChange(event) {
         this.setState({
             "filterValue": event.target.value
         })
@@ -108,7 +108,7 @@ class StockApp extends React.Component {
 
         this.setState({
             "listProducts": productList,
-            "productSelected":  {...productList[this.state.indexProductSelected]}
+            "productSelected": {...productList[this.state.indexProductSelected]}
         });
         console.log(isAdding);
     }
@@ -116,20 +116,27 @@ class StockApp extends React.Component {
     render() {
         return (
             <div>
-                <AddProduct
-                    productAdded={(newProduct) => this.onProductAdded(newProduct)}
-                />
-                <ListProduct
-                    products={this.state.listProducts}
-                    filterValue={this.state.filterValue}
-                    filterChanged={(event) =>this.onFilterValueChange(event)}
-                    productDeleted={(index) => this.onProductDeleted(index)}
-                    productSelected={(index) => this.onProductSelected(index)}
-                />
-                <Product
-                    product={this.state.productSelected}
-                    amountChanged={(isAdding) => this.onAmountChanged(isAdding)}
-                />
+                <h2>INVENTARIO APP</h2>
+                <div className={"container"}>
+                    <div className={"form-group row"}>
+                        <AddProduct
+                            productAdded={(newProduct) => this.onProductAdded(newProduct)}
+                        />
+                    </div>
+                    <div className={"row form-group"}>
+                        <ListProduct
+                            products={this.state.listProducts}
+                            filterValue={this.state.filterValue}
+                            filterChanged={(event) => this.onFilterValueChange(event)}
+                            productDeleted={(index) => this.onProductDeleted(index)}
+                            productSelected={(index) => this.onProductSelected(index)}
+                        />
+                        <Product
+                            product={this.state.productSelected}
+                            amountChanged={(isAdding) => this.onAmountChanged(isAdding)}
+                        />
+                    </div>
+                </div>
             </div>
         )
     }

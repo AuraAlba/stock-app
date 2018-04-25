@@ -21,7 +21,7 @@ const product = (props) => {
     }
 
     return (
-        <div>
+        <div  className={"col-md-5"}>
             {productElement}
         </div>
     );

@@ -15,7 +15,7 @@ const ListProduct = (props) => {
     });
 
     return (
-        <div>
+        <div className={"col-md-7"}>
             <h4>LISTADO DE PRODUCTOS</h4>
             <input placeholder={"Filtrar"} value={props.filterValue} onChange={props.filterChanged} />
             <table>
