@@ -1,16 +1,20 @@
 import React from "react";
+import clases from "./ListItem.scss";
 
 const ListItem = (props) =>{
     return(
         <tr>
-            <td onClick={props.productSelected}>
+            <td onClick={props.productSelected}
+                scope={"col"}
+                className={clases.Name}
+            >
                 {props.product.name}
             </td>
             <td>
                 {props.product.description}
             </td>
             <td>
-                {props.product.price}
+                {"$" + props.product.price}
             </td>
             <td>
                 {props.product.amount}

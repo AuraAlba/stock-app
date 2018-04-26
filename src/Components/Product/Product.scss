@@ -1,0 +1,24 @@
+.Detail{
+  margin: 0 25px;
+  .Title{
+    text-align: left;
+    border-bottom: 1px solid #a9a9a9;
+    color: #7b7373;
+  }
+
+  .Subtitle{
+    text-align: left;
+  }
+  
+  .Price{
+    text-align: left;
+    span{
+      border-radius: 20%;
+      padding: 10px;
+    }
+  }
+
+  .Amount {
+    border-radius: 50%;
+  }
+}
