@@ -4,14 +4,6 @@
     <list default="true" id="d3ffd602-e90e-4cae-9737-4c575797438c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddProduct/AddProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddProduct/AddProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProduct/ListItem/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProduct/ListItem/ListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProduct/ListItem/ListItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProduct/ListItem/ListItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProduct/ListProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProduct/ListProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProduct/ListProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProduct/ListProduct.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Product/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Product/Product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Product/Product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/StockApp/StockApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/StockApp/StockApp.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,8 +57,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="224">
-                <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+              <first_editor>
+                <caret column="10" selection-start-column="10" selection-end-column="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -214,12 +206,12 @@
       <workItem from="1524684786900" duration="4439000" />
       <workItem from="1524694288080" duration="2483000" />
       <workItem from="1524711668726" duration="745000" />
-      <workItem from="1524714395035" duration="4284000" />
+      <workItem from="1524714395035" duration="4572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41158000" />
+    <option name="totallyTimeSpent" value="41446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="0" width="1384" height="744" extended-state="0" />
@@ -678,8 +670,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="224">
-            <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          <first_editor>
+            <caret column="10" selection-start-column="10" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
