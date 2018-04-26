@@ -15,11 +15,13 @@ const product = (props) => {
                         <p><span className={"btn-primary "}>{"$"+props.product.price}</span></p>
                         <p>{props.product.description}</p>
                     </div>
-                    <div className={"col-md-4"}>
-                        <span>{props.product.amount}</span>
-                        <button type="button" className="btn btn-danger" onClick={() => props.amountChanged(false)}>-
+                    <div className={"col-md-4 row"}>
+                        <div className={"col-md-12"}>
+                        <span className={classes.Amount+ " btn-primary"}>{props.product.amount}</span>
+                        </div>
+                        <button type="button" className={"btn btn-danger col-md-6 "+classes.ButtonA} onClick={() => props.amountChanged(false)}>-
                         </button>
-                        <button type="button" className="btn btn-success" onClick={() => props.amountChanged(true)}>+
+                        <button type="button" className={"btn btn-success col-md-6 "+classes.ButtonA} onClick={() => props.amountChanged(true)}>+
                         </button>
                     </div>
                 </div>

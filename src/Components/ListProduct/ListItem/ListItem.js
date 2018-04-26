@@ -5,12 +5,11 @@ const ListItem = (props) =>{
     return(
         <tr>
             <td onClick={props.productSelected}
-                scope={"col"}
                 className={clases.Name}
             >
                 {props.product.name}
             </td>
-            <td>
+            <td className={clases.Description}>
                 {props.product.description}
             </td>
             <td>

@@ -38,7 +38,7 @@ class AddProduct extends React.Component {
             "valid": false,
             "touched": false
         },
-        "formValid": true
+        "formValid": false
     };
 
     inputChangeHandler(event, nameField) {

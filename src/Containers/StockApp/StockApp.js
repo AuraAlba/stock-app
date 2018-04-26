@@ -113,6 +113,27 @@ class StockApp extends React.Component {
         console.log(isAdding);
     }
 
+    onSaveData() {
+        const dataString = JSON.stringify(this.state);
+
+        localStorage.setItem('dataStockApp', dataString);
+    }
+
+    componentDidMount() {
+        const dataString = localStorage.getItem('dataStockApp');
+
+        if (dataString) {
+            try {
+                const dataJson = JSON.parse(dataString);
+
+                this.setState(dataJson);
+            } catch (e) {
+                console.log(e);
+            }
+        }
+
+    }
+
     render() {
         return (
             <div>
@@ -135,6 +156,7 @@ class StockApp extends React.Component {
                             product={this.state.productSelected}
                             amountChanged={(isAdding) => this.onAmountChanged(isAdding)}
                         />
+                        <button className="btn btn-primary" onClick={() => this.onSaveData()}>Guardar</button>
                     </div>
                 </div>
             </div>

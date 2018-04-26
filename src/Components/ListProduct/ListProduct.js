@@ -4,7 +4,7 @@ import clases from "./ListProduct.scss";
 
 
 const ListProduct = (props) => {
-    const listProduct = props.products
+    let listProduct = props.products
         .filter((product) =>{
                return product.name.toLowerCase().includes(props.filterValue.toLowerCase());
         })
@@ -15,6 +15,10 @@ const ListProduct = (props) => {
                 productSelected={() => props.productSelected(index)}
             />;
     });
+
+    if (listProduct.length == 0){
+        listProduct = <tr><td colSpan="5" className={clases.Message}>No hay productos</td></tr>
+    }
 
     return (
         <div className={"col-md-7 "+ clases.Title}>

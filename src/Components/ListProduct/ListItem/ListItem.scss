@@ -2,3 +2,11 @@
   color: #7b7373;
   cursor: pointer;
 }
+
+.Description{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  width: 250px;
+}
